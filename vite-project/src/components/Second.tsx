@@ -5,15 +5,15 @@ type ChildProps = {
     setTest: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function Second(child: ChildProps) {
+export default function Second({test, setTest}: ChildProps) {
 
     const handleFinal = () => {
-        child.setTest((prev) => prev + 100);
+        setTest((prev) => prev + 100);
     }
     
     return (
     <div>
-        <label htmlFor="test3">{child.test}</label>
+        <label htmlFor="test3">{test} + 100</label>
         <button type="button" onClick={handleFinal}>Click 3</button>
     </div>
   )

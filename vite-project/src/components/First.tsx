@@ -5,19 +5,19 @@ type ChildProps = {
     setTest: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function First(child: ChildProps) {
+export default function First({test, setTest}: ChildProps) {
 
   const handleNum = () => {
-      child.setTest((prev) => prev * 2);
+      setTest((prev) => prev * 2);
   }
 
   return (
     <div>
-        <label htmlFor="num">{child.test}</label>
+        <label htmlFor="num">{test} x 2</label>
         <button type="button" onClick={handleNum}>
           Click 2
         </button>
-        <Second test={child.test} setTest={child.setTest} />
+        <Second test={test} setTest={setTest} />
     </div>
   )
 }
