@@ -8,5 +8,4 @@
 
 - FirstState.tsx: displays the value of an array of strings by entering text in SecondState.tsx.
 
-
 Enjoy it ! :koala:
