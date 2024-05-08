@@ -4,7 +4,7 @@ type LiftProps = {
     isChecked: boolean;
 }
 
-const LiftingState = () => {
+const LiftingStateDown = () => {
 
     //state change visibility of btn (disabled or enabled)
     const [isChecked, setIsChecked] = useState<boolean>(false);
@@ -15,15 +15,15 @@ const LiftingState = () => {
 
     return (
         <div>
-            <input type="checkbox" id="lift" name="lift" checked={isChecked} onChange={handleCheck} />
-
-            <label htmlFor="lift">Approved the terms and conditions</label>
-
+            <label htmlFor="lift">
+                <input type="checkbox" id="lift" name="lift" checked={isChecked} onChange={handleCheck} />
+                Approved the terms and conditions
+            </label>
             <ButtonLift isChecked={isChecked} />
         </div>
     )
 }
-export default LiftingState;
+export default LiftingStateDown;
 
 export const ButtonLift = ({isChecked}: LiftProps) => {
     
@@ -33,6 +33,7 @@ export const ButtonLift = ({isChecked}: LiftProps) => {
     
     return (
         <div>
+            {/* Visibility of btn changed */}
             <button type="button" onClick={handleLift} disabled={!isChecked}>Submit</button>
         </div>
     )

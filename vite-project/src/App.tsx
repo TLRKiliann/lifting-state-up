@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import First from './components/First.tsx';
-import LiftingState from './components/LiftingState.tsx';
+import PassValueToNext from './components/PassValueToNext.tsx';
+import LiftingStateUp from './components/LiftingStateUp.tsx';
 
 import FirstState from './components/FirstState.tsx';
 import SecondState from './components/SecondState.tsx';
@@ -32,7 +33,8 @@ function App() {
       
       <First test={test} setTest={setTest} />
 
-      <LiftingState />
+      <PassValueToNext />
+      <LiftingStateUp />
 
       <FirstState mox={[...mox]} />
       <FirstState mox={[...mox]} />
