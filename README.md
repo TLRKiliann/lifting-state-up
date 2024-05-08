@@ -2,9 +2,11 @@
 
 - Original state is changed by App.tsx, First.tsx & Second.tsx.
 
-- LiftingState.tsx : change attribute disabled/enabled of btn with a boolean by clicking checkbox.
+- LiftingStateUP.tsx: change attribute disabled/enabled of btn with a boolean by clicking checkbox.
 
-- FirstState.tsx displays the value of an array of strings by entering text in SecondState.tsx.
+- PassValueToNext.tsx: No lifting state up ! Simple state walkthrought component.  
+
+- FirstState.tsx: displays the value of an array of strings by entering text in SecondState.tsx.
 
 
-Enjoy it ! |koala|
+Enjoy it ! :koala:
